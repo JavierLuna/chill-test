@@ -1,0 +1,32 @@
+{
+  "name": "chill-test",
+  "version": "1.0.0",
+  "description": "Tiny library with tiny footprint to help you run load tests",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run compile",
+    "clean": "npm run clean:dist && npm run clean:env",
+    "clean:dist": "rm -rf dist",
+    "clean:env": "rm -rf node_modules",
+    "compile": "tsc",
+    "lint": "eslint",
+    "test": "echo 'hello'"
+  },
+  "keywords": [
+    "loadtest",
+    "load",
+    "test",
+    "testing"
+  ],
+  "author": "Javier Luna Molina",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.8.0"
+  }
+}
